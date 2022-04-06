@@ -66,6 +66,6 @@ p {
 }
 
 .info {
-    margin-top: 12rem;
+    margin-top: 20rem;
 }
 </style>
