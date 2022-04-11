@@ -18,34 +18,7 @@
 
 <script>
     export default {
-        data() {
-            return {
-                products: null
-            };
-        },
-    methods: {
-        async getData() {
-            try {
-                var options = {
-                    method: 'GET',
-                    headers: {
-                        'accept': 'application/json'
-                    }
-                };
-                const SneaksAPI = require('sneaks-api');
-                const sneaks = new SneaksAPI();
-                sneaks.getProducts("Yeezy Cinder", (err, products) => {
-                    console.log(products);
-                  })
-                const response = await fetch("https://sneaks-api.azurewebsites.net",options);
 
-                this.data = await response.json();
-                console.log(this.data)
-            } catch (error) {
-                console.log(error); 
-            }
-        },
-    }
     }
 </script>
 
